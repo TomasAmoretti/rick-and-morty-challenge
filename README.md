@@ -40,7 +40,7 @@ Se utilizará la api de rick and morty  “https://rickandmortyapi.com/” anali
 
 Imagen de lo que se espera, a modo de ejemplo:
 
-![react_test.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3579f69e-fb2f-4648-ada3-19550301a34e/react_test.jpeg)
+![Image]([https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3579f69e-fb2f-4648-ada3-19550301a34e/react_test.jpeg](https://conexatech.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3579f69e-fb2f-4648-ada3-19550301a34e%2Freact_test.jpeg?table=block&id=ddf09417-3e2e-48cd-8122-e122042cb429&spaceId=a4faa696-062e-4131-a7bd-1f18024fb2df&width=2000&userId=&cache=v2))
 
 ## Criterio de Evaluación
 
