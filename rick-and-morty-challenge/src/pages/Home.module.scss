@@ -1,0 +1,145 @@
+.main {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (min-width: 1240px) {
+        gap: 25px;
+        padding: 30px;
+    }
+}
+
+.episodeSection {
+    border-radius: 12px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+
+    @media (min-width: 1240px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.episodeSectionSelected {
+    background: white;
+    box-shadow: 0 2px 6px #00002000;
+}
+
+.episodeContainer {
+    padding: 5px;
+    max-height: 50vh;
+    overflow-y: scroll;
+
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+        @media (min-width: 1240px) {
+            font-size: 18px;
+        }
+    }
+
+    ul {
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 10px;
+        list-style: none;
+    }
+}
+
+.characterSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px #00002000;
+
+  @media (min-width: 1240px) {
+    gap: 30px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-height: 40vh;
+  overflow-y: hidden;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1240px) {
+    max-height: 58vh;
+  }
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    @media (min-width: 1240px) {
+        font-size: 18px;
+    }
+}
+
+.scroll {
+    flex: 1;
+    overflow-y: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    padding-right: 10px;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: block;
+  text-align: center;
+
+  @media (min-width: 1240px) {
+    margin-top: 12px;
+    gap: 12px;
+  }
+}
+
+.pageBtn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  transition: transform .1s ease;
+
+  &:hover:not(:disabled) {
+    background: #f3f4f6;
+    transform: translateY(-1px);
+  }
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}
+
+.pageInfo {
+  font-size: 12px;
+  color: #6b7280;
+  padding: 0 10px;
+
+  @media (min-width: 1240px) {
+    font-size: 14px;
+  }
+}
