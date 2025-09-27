@@ -1,3 +1,5 @@
+import styles from './CharacterCard.module.scss';
+
 type CharacterCardProps = { 
   id: number; 
   image: string; 
@@ -16,18 +18,20 @@ export default function CharacterCard({
   selected, 
   onClick, 
 }: CharacterCardProps) { 
-  return ( 
-    <div 
-      className={`card ${selected ? "card-selected" : ""}`} 
-      onClick={onClick} 
-    > 
-      <img src={image} alt={name} /> 
-      <div className="card-body"> 
-        <h3>{name}</h3> 
-        <p>{species}</p> 
-        <p>{status}</p> 
-      </div> 
-    </div> 
-  ); 
+  return (
+    <div
+      className={`${styles.card} ${selected ? styles.selected : ""}`}
+      onClick={onClick}
+    >
+      <img src={image} alt={name} className={styles.image} />
+      <div className={styles.info}>
+        <h3 className={styles.name}>{name}</h3>
+        <p className={styles.detail}>
+          <span className={styles.statusDot} data-status={status}></span>
+          {status} - {species}
+        </p>
+      </div>
+    </div>
+  );
 } 
  

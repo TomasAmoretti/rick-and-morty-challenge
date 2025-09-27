@@ -1,11 +1,35 @@
-# React + TypeScript + Vite
+# Rick & Morty Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Scripts
+- `npm run dev` — Vite dev
+- `npm run build` — build producción
+- `npm run preview` — preview
+- `npm run test` — jest en watch
+- `npm run test:coverage` — cobertura
 
-Currently, two official plugins are available:
+## Decisiones
+- Vite + React (no NextJS)
+- REST API Rick & Morty
+- Paginado Prev/Next
+- Validación: episodios solo con #1 y #2 seleccionados
+- Skeleton loaders
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Estructura
+src/
+  assets/
+  components/
+  hooks/
+  lib/
+  pages/
+  types/
+
+## Testing
+- Hooks mockeados / fetch mockeado
+- Cobertura en componentes clave y lógica
+
+## Deploy
+- Vercel
+
 
 ## React Compiler
 
