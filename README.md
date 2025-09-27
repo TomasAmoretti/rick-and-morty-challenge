@@ -1,6 +1,8 @@
 # Rick and Morty Challenge
 Rick and Morty Challenge para Conexa:
 
+Deployado con Vercel: https://rick-and-morty-challenge-2f3z.vercel.app/
+
 # Ssr. Frontend Developer (NextJS)
 
 ---
